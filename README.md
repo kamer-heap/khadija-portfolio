@@ -12,7 +12,7 @@
 </div>
 
 ---
-<a href="https://khadija-amer-portfolio.vercel.app">
+<a href="kamer--portfolio.vercel.app/">
   <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Now-8b5cf6?style=for-the-badge&labelColor=4c1d95" />
 </a>
 &nbsp;
@@ -20,7 +20,7 @@
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=004182" />
 </a>
 &nbsp;
-<a href="https://github.com/kamer-stack">
+<a href="https://github.com/kamer-heap">
   <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" />
 </a>
 &nbsp;
@@ -30,7 +30,7 @@
 
 <br/><br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=kamer-stack&color=8b5cf6&style=for-the-badge&label=Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=kamer-heap&color=8b5cf6&style=for-the-badge&label=Profile+Views)
 
 <br/>
 
@@ -56,7 +56,7 @@ I'm **Khadija Amer** — a Computer Science student at PUCIT, University of the 
 
 I've put together a full portfolio site showcasing deeper write-ups of my security and dev work — incident response notes, log triage breakdowns, and project deep-dives that don't fit in a README.
 
-<a href="https://khadija-amer-portfolio.vercel.app">
+<a href="https://kamer--portfolio.vercel.app/">
   <img src="https://img.shields.io/badge/🌐_Visit_My_Portfolio-8b5cf6?style=for-the-badge&labelColor=4c1d95" />
 </a>
 
@@ -73,7 +73,8 @@ I've put together a full portfolio site showcasing deeper write-ups of my securi
 ### 🎮 Minesweeper Game
 Grid-based console game with dynamic difficulty scaling, custom flagging system, high-score file tracking, and recursive auto-reveal algorithm.
 
-[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-stack/Minesweeper-game-)
+[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-heap/Minesweeper-game-)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge)](https://kamer-heap.github.io/Minesweeper-game-/)
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 
@@ -95,7 +96,7 @@ Desktop recreation of the iconic browser endless runner. Optimized collision det
 ### 📡 Network Traffic Monitor
 Browser-based packet sniffing dashboard. Real-time packet capture, protocol analysis, and live port-to-service mapping for 20+ ports. Smart fallback simulation mode included.
 
-[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-stack/network-traffic-monitor)
+[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-heap/network-traffic-monitor)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000?style=flat-square&logo=flask&logoColor=white)
@@ -107,8 +108,8 @@ Browser-based packet sniffing dashboard. Real-time packet capture, protocol anal
 ### 📊 Log Analyzer
 Advanced server log parser handling 38+ operational edge cases. Tracks status codes, request counts, hourly traffic, and anomaly flags via CLI and web dashboard.
 
-[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-stack/log-analyzer)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge)](https://kamer-stack.github.io/log-analyzer/web_ui.html)
+[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-heap/log-analyzer)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge)](https://kamer-heap.github.io/log-analyzer/web_ui.html)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
@@ -120,8 +121,8 @@ Advanced server log parser handling 38+ operational edge cases. Tracks status co
 ### 📝 KadEdit Text Editor
 VS Code-inspired dark browser GUI editor. Dynamic text storage via vector strings, recent file queues, and stack-based undo/redo history.
 
-[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-stack/KadEdit)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge)](https://kamer-stack.github.io/KadEdit/)
+[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-heap/KadEdit)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge)](https://kamer-heap.github.io/KadEdit/)
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
@@ -132,8 +133,8 @@ VS Code-inspired dark browser GUI editor. Dynamic text storage via vector string
 ### ➗ Infix Engine
 High-performance expression parsing, verification, evaluation, and structural algorithm optimization component built in C++.
 
-[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-stack/infix-engine)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge)](https://kamer-stack.github.io/infix-engine/)
+[![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-heap/infix-engine)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge)](https://kamer-heap.github.io/infix-engine/)
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 
@@ -210,9 +211,9 @@ High-performance expression parsing, verification, evaluation, and structural al
 
 <div align="center">
 
-<img height="200" src="https://github-readme-stats.vercel.app/api?username=kamer-stack&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=8b5cf6&text_color=e5e7eb&rank_icon=github" />
+<img height="200" src="https://github-readme-stats.vercel.app/api?username=kamer-heap&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=8b5cf6&text_color=e5e7eb&rank_icon=github" />
 &nbsp;&nbsp;
-<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamer-stack&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=e5e7eb&langs_count=8" />
+<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamer-heap&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=e5e7eb&langs_count=8" />
 
 <br/><br/>
 
@@ -220,7 +221,7 @@ High-performance expression parsing, verification, evaluation, and structural al
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=kamer-stack&theme=react-dark&bg_color=0d1117&color=a78bfa&line=8b5cf6&point=c084fc&area=true&hide_border=true&height=300" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=kamer-heap&theme=react-dark&bg_color=0d1117&color=a78bfa&line=8b5cf6&point=c084fc&area=true&hide_border=true&height=300" width="100%"/>
 
 </div>
 
@@ -230,7 +231,7 @@ High-performance expression parsing, verification, evaluation, and structural al
 
 <div align="center">
 
-<a href="https://khadija-amer-portfolio.vercel.app">
+<a href="https://kamer--portfolio.vercel.app/">
   <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Now-8b5cf6?style=for-the-badge&labelColor=4c1d95" />
 </a>
 &nbsp;
@@ -238,7 +239,7 @@ High-performance expression parsing, verification, evaluation, and structural al
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=004182" />
 </a>
 &nbsp;
-<a href="https://github.com/kamer-stack">
+<a href="https://github.com/kamer-heap">
   <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" />
 </a>
 &nbsp;
