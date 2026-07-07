@@ -96,7 +96,7 @@ Desktop recreation of the iconic browser endless runner. Optimized collision det
 <td width="50%" valign="top">
 
 ### 📡 Network Traffic Monitor
-Browser-based packet sniffing dashboard. Real-time packet capture, protocol analysis, and live port-to-service mapping for 20+ ports. Smart fallback simulation mode included.
+Real-time network data dashboard — built with Flask and Scapy to capture, parse, and visualize live traffic across 20+ ports, with a simulation fallback mode for offline demos.
 
 [![Repo](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamer-heap/network-traffic-monitor)
 
