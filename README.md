@@ -56,7 +56,7 @@ I'm **Khadija Amer** — a Computer Science student at PUCIT, University of the 
 
 <div align="center">
 
-I've put together a full portfolio site with deeper write-ups on my projects — system design decisions, debugging breakdowns, and the trade-offs behind each build.
+My portfolio site has deeper write-ups on select projects — system design decisions, debugging processes, and technical deep-dives that don't fit in a README.
 
 <a href="https://kamer--portfolio.vercel.app/">
   <img src="https://img.shields.io/badge/🌐_Visit_My_Portfolio-8b5cf6?style=for-the-badge&labelColor=4c1d95" />
