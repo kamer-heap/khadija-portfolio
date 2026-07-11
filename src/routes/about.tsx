@@ -3,8 +3,7 @@ import { useRef } from "react";
 import { ArrowRight, Briefcase, Users, GraduationCap as GradCap, Flag } from "lucide-react";
 import { PhysicsSkills } from "../components/PhysicsSkills";
 import { ScrollProgressLine } from "../components/ScrollProgressLine";
-import khadijaPhoto from "../assets/khadija.png.asset.json";
-
+import khadijaPhoto from "../assets/khadija-portrait.png";
 
 
 export const Route = createFileRoute("/about")({
@@ -121,7 +120,7 @@ function AboutPage() {
         </header>
         <div className="order-1 md:order-2 flex justify-center md:justify-end animate-fade-up">
           <div className="avatar-glow h-48 w-48 sm:h-56 sm:w-56 md:h-64 md:w-64">
-            <img src={khadijaPhoto.url} alt="Khadija Amer" loading="eager" />
+            <img src={khadijaPhoto} alt="Khadija Amer" loading="eager" />
           </div>
         </div>
       </div>
