@@ -140,7 +140,19 @@ function AchievementsPage() {
           {filtered.map((c) => {
             const Icon = CERT_ICONS[c.icon] ?? Award;
             return (
-              <article key={c.title} className="glass glow-border rounded-2xl p-6 flex flex-col">
+              <article
+                key={c.title}
+                className={`relative glass rounded-2xl p-6 flex flex-col ${
+                  c.featured
+                    ? "border border-primary/60 shadow-[0_0_30px_oklch(0.68_0.24_295/0.35)]"
+                    : "glow-border"
+                }`}
+              >
+                {c.featured && (
+                  <span className="absolute top-3 right-3 z-10 text-[10px] font-mono uppercase tracking-widest px-2 py-1 rounded-md bg-primary text-primary-foreground shadow-[0_0_18px_oklch(0.68_0.24_295/0.6)]">
+                    ★ Featured
+                  </span>
+                )}
                 {c.image && (
                   <div className="mb-4 -mx-6 -mt-6 overflow-hidden rounded-t-2xl border-b border-border/50 bg-secondary/30 aspect-[4/3]">
                     <img

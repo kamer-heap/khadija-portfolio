@@ -1,17 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useRef } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Briefcase, Users, GraduationCap as GradCap, Flag } from "lucide-react";
 import { PhysicsSkills } from "../components/PhysicsSkills";
 import { ScrollProgressLine } from "../components/ScrollProgressLine";
+import khadijaPhoto from "../assets/khadija.png.asset.json";
+
 
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Khadija Amer" },
-      { name: "description", content: "Cyber security student at PUCIT focused on SOC analysis, packet inspection, log triage, and vulnerability assessment." },
+      { name: "description", content: "Computer Science student at PUCIT building backend systems, databases, networking tools, and intelligent applications." },
       { property: "og:title", content: "About — Khadija Amer" },
-      { property: "og:description", content: "BSCS @ PUCIT. Blue team, SOC analysis, packet inspection." },
+      { property: "og:description", content: "BSCS @ PUCIT. Backend, databases, systems, and AI." },
     ],
   }),
   component: AboutPage,
@@ -32,7 +34,7 @@ const EDUCATION: EduItem[] = [
     school: "University of the Punjab — PUCIT",
     degree: "BSCS",
     period: "2024 — 2028",
-    body: "Core focus: Information Security, Network Security, Computer Networks, OOP, DSA, PL/SQL. Active member of EMS (Event Management Society) and the Sports Society.",
+    body: "Core focus: Data Structures & Algorithms, Object-Oriented Programming, Database Design, Operating Systems, Computer Networks, and Oracle PL/SQL. Active member of EMS (Event Management Society) and the Sports Society.",
     badge: "Honhaar Scholar — Fully Funded Academic Merit Scholarship",
   },
   {
@@ -52,40 +54,110 @@ const EDUCATION: EduItem[] = [
   },
 ];
 
+interface ExperienceItem {
+  role: string;
+  org: string;
+  period: string;
+  body: string;
+  Icon: typeof Briefcase;
+}
+
+const EXPERIENCE: ExperienceItem[] = [
+  {
+    role: "Teaching Assistant",
+    org: "PUCIT — under Dr. Madiha Khalid",
+    period: "Sep 2025 — Jan 2026",
+    body: "Structured lab materials and supervised laboratory instruction sessions for the ICT course.",
+    Icon: GradCap,
+  },
+  {
+    role: "Campus Ambassador",
+    org: "LoopLab — LoopVerse 2.0",
+    period: "Jan 2026 — Apr 2026",
+    body: "Drove registration and community engagement nationwide. Awarded 'Best of the Ambassadors' shield.",
+    Icon: Users,
+  },
+  {
+    role: "Campus Ambassador",
+    org: "FCIT Developers Club — FDC Summer Bootcamp 2025",
+    period: "Jul 2025",
+    body: "Managed outreach and student registrations for the FDC Summer Bootcamp 2025.",
+    Icon: Briefcase,
+  },
+  {
+    role: "Cricket Coordinator",
+    org: "PUCIT Sports Society",
+    period: "2025 — 2026",
+    body: "Coordinated the PUCIT Winter League 2025 as Cricket Coordinator.",
+    Icon: Flag,
+  },
+];
+
 function AboutPage() {
   const eduRef = useRef<HTMLDivElement>(null);
+  const expRef = useRef<HTMLOListElement>(null);
   return (
 
     <div className="mx-auto max-w-6xl px-6 pt-32 pb-20">
-      <header className="max-w-3xl animate-fade-up">
-        <p className="text-xs font-mono text-primary uppercase tracking-[0.3em]">/ about</p>
-        <h1 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight text-gradient">
-          Blue Team in Training
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-          I'm Khadija — a Computer Science student at <span className="text-foreground">PUCIT, University of the Punjab</span>
-          {" "}(Class of 2028), training to become a <span className="text-foreground">SOC Analyst</span>. My work centers on the
-          defensive side of security: <span className="text-foreground">incident response</span>, <span className="text-foreground">log triage</span>,
-          {" "}<span className="text-foreground">network monitoring</span>, <span className="text-foreground">packet sniffing</span>,
-          {" "}<span className="text-foreground">threat modeling</span>, and <span className="text-foreground">vulnerability assessment</span>.
-        </p>
-        <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-          I build the tools I want to use — a live packet sniffing dashboard, a log analyzer that handles 38+ malformed
-          edge cases, and an automated buffer overflow framework that documents bypasses for ASLR, DEP, and stack
-          canaries. Outside the terminal I'm a teaching assistant under Dr. Madiha Khalid, a national campus ambassador,
-          and a cricket coordinator at PUCIT Sports Society.
-        </p>
-      </header>
-
-      <section className="mt-20">
-        <div className="flex items-end justify-between mb-6">
-          <div>
-            <p className="text-xs font-mono text-primary uppercase tracking-[0.3em]">/ tech-stack</p>
-            <h2 className="mt-2 text-2xl sm:text-3xl font-bold">Interactive Toolkit</h2>
-            <p className="text-sm text-muted-foreground mt-2">Drag, fling, collide. Real physics — same as the tools.</p>
+      <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
+        <header className="max-w-3xl animate-fade-up order-2 md:order-1">
+          <p className="text-xs font-mono text-primary uppercase tracking-[0.3em]">/ about</p>
+          <h1 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight uppercase">
+            <span className="text-foreground">THE </span>
+            <span className="text-gradient">STORY</span>
+            <span className="text-foreground"> SO FAR</span>
+          </h1>
+          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            I got into Computer Science because I love figuring out how things work and building solutions that make an impact.
+            I'm a Computer Science student at <span className="text-foreground">PUCIT, University of the Punjab</span> (Class of 2028),
+            with an interest in <span className="text-foreground">software engineering</span>, <span className="text-foreground">databases</span>,
+            {" "}<span className="text-foreground">networking</span>, and <span className="text-foreground">Artificial Intelligence</span>.
+          </p>
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+            When I'm not coding, you'll find me mentoring students as a Teaching Assistant, representing my university as a
+            National Campus Ambassador, or organizing events as a Cricket Coordinator. I'm always learning, building, and
+            looking for new challenges.
+          </p>
+        </header>
+        <div className="order-1 md:order-2 flex justify-center md:justify-end animate-fade-up">
+          <div className="avatar-glow h-48 w-48 sm:h-56 sm:w-56 md:h-64 md:w-64">
+            <img src={khadijaPhoto.url} alt="Khadija Amer" loading="eager" />
           </div>
         </div>
+      </div>
+
+
+      <section className="mt-20">
+        <div className="mb-6">
+          <p className="text-xs font-mono text-primary uppercase tracking-[0.3em]">/ tech-stack</p>
+          <h2 className="mt-2 text-2xl sm:text-3xl font-bold">Tools I Use</h2>
+        </div>
         <PhysicsSkills />
+      </section>
+
+      {/* Experience — vertical timeline */}
+      <section className="mt-24">
+        <p className="text-xs font-mono text-primary uppercase tracking-[0.3em]">/ experience</p>
+        <h2 className="mt-2 text-2xl sm:text-3xl font-bold">Experience</h2>
+        <ol ref={expRef} className="relative ml-3 mt-10 space-y-8">
+          <ScrollProgressLine containerRef={expRef} className="left-0" />
+          {EXPERIENCE.map((e) => {
+            const Icon = e.Icon;
+            return (
+              <li key={e.role + e.org} className="ml-8">
+                <span className="absolute -left-[18px] grid h-9 w-9 place-items-center rounded-full bg-background border border-primary/50 shadow-[0_0_20px_oklch(0.68_0.24_295/0.4)]">
+                  <Icon size={16} className="text-primary" />
+                </span>
+                <div className="glass glow-border rounded-2xl p-6">
+                  <p className="text-xs font-mono text-primary uppercase tracking-widest">{e.period}</p>
+                  <h3 className="mt-1 text-lg font-display font-semibold">{e.role}</h3>
+                  <p className="text-sm text-foreground/90">{e.org}</p>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{e.body}</p>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
       </section>
 
       {/* Education — alternating vertical timeline */}
@@ -148,44 +220,19 @@ function AboutPage() {
       </section>
 
       <section className="mt-24">
-        <p className="text-xs font-mono text-primary uppercase tracking-[0.3em]">/ activity</p>
-        <h2 className="mt-2 text-2xl sm:text-3xl font-bold">Coding Activity Tracker</h2>
-        <p className="text-sm text-muted-foreground mt-2">
-          Live GitHub contribution graph for{" "}
-          <a href="https://github.com/kamer-stack" target="_blank" rel="noreferrer" className="text-primary hover:underline">
-            @kamer-stack
-          </a>
-          .
-        </p>
-        <div className="mt-6 glass glow-border rounded-2xl p-6 overflow-x-auto">
-          <a href="https://github.com/kamer-stack" target="_blank" rel="noreferrer" className="block min-w-[700px]">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold">
+          <span className="text-foreground">Days I </span>
+          <span className="text-gradient">Code</span>
+        </h2>
+        <div className="mt-8 glass glow-border rounded-2xl p-6 overflow-x-auto">
+          <a href="https://github.com/kamer-heap" target="_blank" rel="noreferrer" className="block min-w-[700px]">
             <img
-              src="https://ghchart.rshah.org/8b5cf6/kamer-stack"
-              alt="GitHub contribution graph for kamer-stack"
+              src="https://ghchart.rshah.org/8b5cf6/kamer-heap"
+              alt="GitHub contribution graph for kamer-heap"
               className="w-full"
               loading="lazy"
             />
           </a>
-          <div className="mt-4 grid sm:grid-cols-3 gap-3">
-            <img
-              src="https://github-readme-stats.vercel.app/api?username=kamer-stack&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=00000000&title_color=a78bfa&icon_color=8b5cf6&text_color=e5e7eb"
-              alt="GitHub stats"
-              className="w-full rounded-lg"
-              loading="lazy"
-            />
-            <img
-              src="https://github-readme-streak-stats.herokuapp.com/?user=kamer-stack&theme=midnight-purple&hide_border=true&background=00000000&stroke=8b5cf6&ring=a78bfa&fire=c084fc&currStreakLabel=a78bfa"
-              alt="GitHub streak"
-              className="w-full rounded-lg"
-              loading="lazy"
-            />
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamer-stack&layout=compact&theme=midnight-purple&hide_border=true&bg_color=00000000&title_color=a78bfa&text_color=e5e7eb"
-              alt="Top languages"
-              className="w-full rounded-lg"
-              loading="lazy"
-            />
-          </div>
         </div>
       </section>
 

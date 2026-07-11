@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { Gamepad2 } from "lucide-react";
 
 const links = [
   { to: "/", label: "Home" },
@@ -25,7 +26,6 @@ export function Nav() {
             <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-bold text-sm shadow-[var(--shadow-glow)]">
               KA
             </span>
-            <span className="font-display font-semibold tracking-tight hidden sm:inline">Khadija Amer</span>
           </Link>
           <ul className="flex items-center gap-1 text-sm">
             {links.map((l) => (
@@ -41,6 +41,20 @@ export function Nav() {
                 </Link>
               </li>
             ))}
+            <li className="ml-1">
+              <a
+                href="https://kamer-heap.github.io/Minesweeper-game-/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-game btn-game-compact"
+                aria-label="Play Game"
+              >
+                <span className="btn-game-icon">
+                  <Gamepad2 size={14} />
+                </span>
+                Play Game
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

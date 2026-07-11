@@ -1,20 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useRef } from "react";
-import { ArrowRight, Linkedin, Github, ChevronDown, Shield, Activity, Terminal } from "lucide-react";
+import { ArrowRight, Linkedin, Github, ChevronDown, Code2, Server, Brain, GraduationCap, Rocket, Search } from "lucide-react";
 import { NetworkScene, useScrollProgress } from "../components/NetworkScene";
 import { StarsBackground } from "../components/StarsBackground";
+import { TypewriterTitles } from "../components/TypewriterTitles";
 
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/khadija-amer-7821a8334";
-const GITHUB_URL = "https://github.com/kamer-stack";
+const GITHUB_URL = "https://github.com/kamer-heap";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Khadija Amer — Cyber Security Portfolio" },
-      { name: "description", content: "Blue-team focused cyber security portfolio: incident response, log triage, network monitoring, and threat modeling." },
-      { property: "og:title", content: "Khadija Amer — Cyber Security Portfolio" },
-      { property: "og:description", content: "Hands-on packet analysis, log triage, and vulnerability assessment." },
+      { title: "Khadija Amer — Computer Science Student · Software Engineering · Systems · AI" },
+      { name: "description", content: "Computer Science student building backend systems, databases, networking tools, and intelligent applications." },
+      { property: "og:title", content: "Khadija Amer — Computer Science Student · Software Engineering · Systems · AI" },
+      { property: "og:description", content: "Computer Science student building backend systems, databases, networking tools, and intelligent applications." },
     ],
   }),
   component: HomePage,
@@ -32,41 +33,32 @@ function HomePage() {
             <NetworkScene scrollProgress={progress} />
           </div>
 
-          {/* Layered typography — hollow outline, single line */}
+          {/* Layered typography — hero greeting */}
           <div
-            className="absolute inset-0 flex items-center justify-center pointer-events-none px-4"
+            className="absolute inset-0 flex items-center justify-center pointer-events-none px-6"
             style={{ opacity: 1 - progress * 1.4 }}
           >
-            <div className="relative w-full flex items-center justify-center">
+            <div className="text-left">
               <h1
-                aria-label="Khadija Amer"
-                className="select-none font-black uppercase text-center whitespace-nowrap"
+                aria-label="Hi there! I'm Khadija Amer"
+                className="select-none font-black tracking-tight"
                 style={{
                   fontFamily: "'Space Grotesk', Inter, sans-serif",
-                  fontSize: "clamp(2.25rem, 13vw, 11rem)",
-                  lineHeight: 0.95,
-                  letterSpacing: "-0.04em",
-                  color: "rgba(220, 210, 255, 0.18)",
-                  WebkitTextStroke: "1px rgba(220, 210, 255, 0.35)",
-                  textShadow: "0 0 60px oklch(0.68 0.24 295 / 0.18)",
+                  fontSize: "clamp(2.5rem, 8vw, 6.5rem)",
+                  lineHeight: 1.02,
+                  letterSpacing: "-0.02em",
                 }}
               >
-                KHADIJA&nbsp;AMER
+                <span className="block text-foreground">Hi there!</span>
+                <span className="block text-foreground">
+                  I'm <span className="text-gradient name-glow">Khadija Amer</span>
+                </span>
+
               </h1>
+              <TypewriterTitles />
             </div>
           </div>
 
-          {/* Foreground content block (tag + subtitle + CTAs) */}
-          <div
-            className="absolute inset-x-0 top-[8%] flex justify-center px-6 pointer-events-none"
-            style={{ opacity: 1 - progress * 1.4 }}
-          >
-            <div className="text-center pointer-events-auto animate-fade-up">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-mono text-primary border border-primary/30 bg-primary/5 backdrop-blur-sm">
-                BLUE TEAM · BSCS · PUCIT · CLASS OF 2028
-              </span>
-            </div>
-          </div>
 
           <div
             className="absolute inset-x-0 bottom-[8%] flex flex-col items-center gap-5 px-6 pointer-events-none"
@@ -96,10 +88,10 @@ function HomePage() {
         <div className="relative mx-auto max-w-6xl">
           <div className="grid sm:grid-cols-3 gap-6">
             {[
-              { k: "Focus", v: "Blue Team & SOC", Icon: Shield },
-              { k: "Discipline", v: "Logs · Packets · Triage", Icon: Activity },
-              { k: "Toolkit", v: "Wireshark · Burp · Scapy", Icon: Terminal },
-            ].map(({ k, v, Icon }) => (
+              { k: "Software Engineering", v: "Backend Development", sub: "Python · JavaScript · SQL", Icon: Code2 },
+              { k: "Systems", v: "Operating Systems · Networking", sub: "Databases · REST APIs", Icon: Server },
+              { k: "Intelligent Applications", v: "Artificial Intelligence", sub: "Automation · Problem Solving", Icon: Brain },
+            ].map(({ k, v, sub, Icon }) => (
               <div key={k} className="glass glow-border rounded-2xl p-6">
                 <div className="flex items-center gap-3">
                   <div className="h-9 w-9 grid place-items-center rounded-lg bg-primary/10 text-primary border border-primary/30">
@@ -108,8 +100,32 @@ function HomePage() {
                   <p className="text-xs font-mono text-primary uppercase tracking-widest">{k}</p>
                 </div>
                 <p className="mt-3 text-xl font-display font-semibold">{v}</p>
+                <p className="mt-1 text-sm text-muted-foreground">{sub}</p>
               </div>
             ))}
+          </div>
+
+          {/* Currently */}
+          <div className="mt-16">
+            <p className="text-xs font-mono text-primary uppercase tracking-[0.3em]">/ currently</p>
+            <h2 className="mt-2 text-2xl sm:text-3xl font-bold">What I'm doing now</h2>
+            <div className="mt-6 grid sm:grid-cols-3 gap-6">
+              {[
+                { k: "Learning", v: "Machine Learning", Icon: GraduationCap },
+                { k: "Building", v: "AI Projects", Icon: Rocket },
+                { k: "Seeking", v: "Software Engineering Internship", Icon: Search },
+              ].map(({ k, v, Icon }) => (
+                <div key={k} className="glass glow-border rounded-2xl p-6">
+                  <div className="flex items-center gap-3">
+                    <div className="h-9 w-9 grid place-items-center rounded-lg bg-primary/10 text-primary border border-primary/30">
+                      <Icon size={16} />
+                    </div>
+                    <p className="text-xs font-mono text-primary uppercase tracking-widest">{k}</p>
+                  </div>
+                  <p className="mt-3 text-lg font-display font-semibold">{v}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-16 text-center">

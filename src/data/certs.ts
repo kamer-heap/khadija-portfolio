@@ -26,6 +26,8 @@ export interface Cert {
     | "Flag";
   /** Public path to the certificate image, e.g. "/certs/foo.png". Optional. */
   image?: string;
+  /** Highlight this card as a Featured Technical Certification. */
+  featured?: boolean;
 }
 
 export const CERTS: Cert[] = [
@@ -42,6 +44,7 @@ export const CERTS: Cert[] = [
     body: "Issued by Wiz (part of Google Cloud) in May 2026, validating foundational AI system security principles.",
     icon: "ShieldCheck",
     image: "/certs/prompt-airlines-ai-security.png",
+    featured: true,
   },
   {
     title: "Board Merit Award & Shield",
@@ -70,6 +73,7 @@ export const CERTS: Cert[] = [
     body: "Completed the Vista Equity Partners AI in Action Job Simulation on Forage (Jun 2026). Built fluency in prompt & contextual engineering and applied prompt skills to automate a professional workflow. Credential ID: s2cc6beHPr2cxbmcN.",
     icon: "ShieldCheck",
     image: "/certs/vista-ai-in-action.png",
+    featured: true,
   },
   {
     title: "CM Punjab Laptop Awardee",
@@ -133,6 +137,7 @@ export const CERTS: Cert[] = [
     body: "Coursera project certificate (Nov 2024) — Getting Started with Microsoft Excel, covering structured data entry, formatting, and core spreadsheet workflows.",
     icon: "FileSpreadsheet",
     image: "/certs/intro-to-excel.png",
+    featured: true,
   },
   {
     title: "Mini Olympics 2026 — Event Coordinator",

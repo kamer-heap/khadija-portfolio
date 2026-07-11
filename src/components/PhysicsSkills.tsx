@@ -1,10 +1,12 @@
 import { useEffect, useRef } from "react";
 
 const SKILLS = [
-  "C/C++", "Python", "Flask", "Scapy", "pwntools", "PL/SQL",
-  "HTML", "CSS", "JavaScript", "PHP", "Wireshark", "Nmap",
-  "Docker", "Kali Linux", "Bash", "Burp Suite", "Metasploit",
-  "x64dbg", "PE-Bear", "Gobuster", "Ubuntu", "Windows", "XAMPP",
+  "Python", "C++", "JavaScript", "SQL", "HTML", "CSS", "Bash",
+  "React", "Flask", "Node.js",
+  "Oracle PL/SQL", "MongoDB",
+  "Git", "GitHub", "Docker", "Linux",
+  "DSA", "OOP", "REST APIs", "OS", "Networks",
+  "Wireshark", "Scapy", "Nmap",
 ];
 
 interface Ball {

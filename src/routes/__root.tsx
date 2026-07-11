@@ -16,6 +16,7 @@ import { Nav } from "../components/Nav";
 import { Spotlight } from "../components/Spotlight";
 import { Footer } from "../components/Footer";
 import { StarsBackground } from "../components/StarsBackground";
+import { CustomCursor } from "../components/CustomCursor";
 
 function NotFoundComponent() {
   return (
@@ -60,15 +61,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Khadija Amer — Technical Developer & Security Researcher" },
-      { name: "description", content: "Portfolio of Khadija Amer" },
+      { title: "Khadija Amer — Computer Science Student · Software Engineering · Systems · AI" },
+      { name: "description", content: "Computer Science student building backend systems, databases, networking tools, and intelligent applications." },
       { name: "author", content: "Khadija Amer" },
-      { property: "og:title", content: "Khadija Amer — Technical Developer & Security Researcher" },
-      { property: "og:description", content: "Portfolio of Khadija Amer" },
+      { property: "og:title", content: "Khadija Amer — Computer Science Student · Software Engineering · Systems · AI" },
+      { property: "og:description", content: "Computer Science student building backend systems, databases, networking tools, and intelligent applications." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Khadija Amer — Technical Developer & Security Researcher" },
-      { name: "twitter:description", content: "Portfolio of Khadija Amer" },
+      { name: "twitter:title", content: "Khadija Amer — Computer Science Student · Software Engineering · Systems · AI" },
+      { name: "twitter:description", content: "Computer Science student building backend systems, databases, networking tools, and intelligent applications." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7685acb4-ddda-4e5c-8cad-1eaa6f26d899/id-preview-2ef4ed08--9098e87b-d159-44e4-8ca8-ab13d593e722.lovable.app-1781549646376.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7685acb4-ddda-4e5c-8cad-1eaa6f26d899/id-preview-2ef4ed08--9098e87b-d159-44e4-8ca8-ab13d593e722.lovable.app-1781549646376.png" },
     ],
@@ -107,6 +108,7 @@ function RootComponent() {
         <div className="fixed inset-0 grid-bg pointer-events-none -z-10" />
         {!isHome && <StarsBackground />}
         <Spotlight />
+        <CustomCursor />
         <Nav />
         <main className="relative z-10">
           <Outlet />
