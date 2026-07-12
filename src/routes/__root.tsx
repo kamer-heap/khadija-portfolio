@@ -16,7 +16,6 @@ import { Nav } from "../components/Nav";
 import { Spotlight } from "../components/Spotlight";
 import { Footer } from "../components/Footer";
 import { StarsBackground } from "../components/StarsBackground";
-import { CustomCursor } from "../components/CustomCursor";
 
 function NotFoundComponent() {
   return (
@@ -108,7 +107,6 @@ function RootComponent() {
         <div className="fixed inset-0 grid-bg pointer-events-none -z-10" />
         {!isHome && <StarsBackground />}
         <Spotlight />
-        <CustomCursor />
         <Nav />
         <main className="relative z-10">
           <Outlet />

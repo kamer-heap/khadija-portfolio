@@ -120,8 +120,7 @@ function AboutPage() {
         </header>
         <div className="order-1 md:order-2 flex justify-center md:justify-end animate-fade-up">
           <div className="avatar-glow h-48 w-48 sm:h-56 sm:w-56 md:h-64 md:w-64">
-            <img src={khadijaPhoto} alt="Khadija Amer" loading="eager" />
-          </div>
+           <img src={khadijaPhoto} alt="Khadija Amer" loading="eager" />          </div>
         </div>
       </div>
 

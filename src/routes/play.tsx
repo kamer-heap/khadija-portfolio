@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Gamepad2 } from "lucide-react";
+import { ArrowRight, Gamepad2, Loader2 } from "lucide-react";
+import { useState } from "react";
 
 const MINESWEEPER_URL = "https://kamer-heap.github.io/Minesweeper-game-/";
 
@@ -16,6 +17,17 @@ export const Route = createFileRoute("/play")({
 });
 
 function PlayPage() {
+  const [launching, setLaunching] = useState(false);
+
+  const handleLaunch = () => {
+    if (launching) return;
+    setLaunching(true);
+    window.setTimeout(() => {
+      window.open(MINESWEEPER_URL, "_blank", "noopener,noreferrer");
+      setLaunching(false);
+    }, 1700);
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-28 sm:pt-32 pb-24">
       <section className="relative overflow-hidden">
@@ -28,19 +40,19 @@ function PlayPage() {
             Enough scrolling — clear the board and see if you can beat my Minesweeper.
           </p>
           <div className="mt-10 flex justify-center">
-            <a
-              href={MINESWEEPER_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-game"
+            <button
+              type="button"
+              onClick={handleLaunch}
+              disabled={launching}
+              className={`btn-game ${launching ? "btn-game-launching" : ""}`}
               aria-label="Play Minesweeper"
             >
               <span className="btn-game-icon">
-                <Gamepad2 size={16} />
+                {launching ? <Loader2 size={16} className="animate-spin" /> : <Gamepad2 size={16} />}
               </span>
-              Play Game
-              <ArrowRight size={16} className="opacity-80" />
-            </a>
+              {launching ? "Launching Game..." : "Play Game"}
+              {!launching && <ArrowRight size={16} className="opacity-80" />}
+            </button>
           </div>
         </div>
       </section>
